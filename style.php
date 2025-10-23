@@ -21,6 +21,19 @@ a.lien-article:visited {
     text-decoration: none;
 }
 
+.btn {
+  display: inline-block;
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: darkgrey;
+}
+
 .articles {
     display: flex;
     flex-direction: column;

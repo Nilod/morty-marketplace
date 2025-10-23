@@ -29,8 +29,8 @@ $article = $articles[$_GET['id']];
 <body>
     <header>
         <a href="marketplace.php" class="btn-accueil"><h1>Morty Marketplace</h1></a>
-        <a href="panier.php">Panier</a>
-        <a href="logout.php">Logout</a>
+        <a href="panier.php" class="btn">Panier</a>
+        <a href="logout.php" class="btn">Logout</a>
     </header>
     <main>
         <section id="article-detail">
@@ -41,7 +41,6 @@ $article = $articles[$_GET['id']];
                 <em>Prix : <?php echo $article['prix']; ?> €</em><br>
                 <form action="panier.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
-                    Quantité : <input type="number" name="quantite" value="1" min="1"><br>
                     <input type="submit" value="Ajouter au panier">
                 </form>
             </div>
