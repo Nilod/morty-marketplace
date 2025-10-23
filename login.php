@@ -23,8 +23,6 @@ if (isset($_POST['login']) && isset($_POST['pwd'])) {
         // puis on le redirige vers la page d'accueil
         echo '<meta http-equiv="refresh" content="0;URL=login.php">';
     }
-} else {
-    echo 'Les variables du formulaire ne sont pas déclarées.';
 }
 ?>
 <!DOCTYPE html>

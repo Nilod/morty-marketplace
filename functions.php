@@ -42,8 +42,7 @@ function afficherArticles() {
     global $TAILLE_LIGNE;
     global $H_VIGNETTE;
     global $L_VIGNETTE;
-    $articles = file_get_contents("articles.json");
-    $articles = json_decode($articles);
+    $articles = json_decode(file_get_contents("articles.json"));
 
     $col = 0;
 
