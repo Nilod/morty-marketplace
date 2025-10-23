@@ -44,6 +44,13 @@ a.lien-article:visited {
   background-color: darkgrey;
 }
 
+.btn-panier {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+
 .articles {
     display: flex;
     flex-direction: column;
@@ -68,4 +75,3 @@ a.lien-article:visited {
     box-sizing: border-box;
     border: 2px solid black;
 }
-

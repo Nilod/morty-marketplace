@@ -20,9 +20,6 @@ if (!isset($articles[$idArticle])) {
 
 if (isset($_POST['ajoutPanier'])) {
     // Ajouter l'article au panier
-    if (!isset($_SESSION['panier'])) {
-        $_SESSION['panier'] = array();
-    }
     if (!isset($_SESSION['panier'][$idArticle])) {
         $_SESSION['panier'][$idArticle] = 0;
     }

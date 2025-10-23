@@ -15,6 +15,8 @@ if (isset($_POST['login']) && isset($_POST['pwd'])) {
         // on enregistre les paramètres de notre visiteur comme variables ession ($login et $pwd) (
         $_SESSION['login'] = $_POST['login'];
         $_SESSION['pwd'] = $_POST['pwd'];
+
+        $_SESSION['panier'] = array();
         // on redirige notre visiteur vers une page de notre section membre
         header ('location: marketplace.php');
     }
