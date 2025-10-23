@@ -52,7 +52,14 @@ $article = $articles[$idArticle];
             <div class="article-detail">
                 <img src="images/<?php echo $article['image']; ?>" alt=""><br>
                 <strong><?php echo $article['libelle']; ?></strong><br>
-                <?php echo $article['description']; ?><br>
+                <p><?php echo $article['description']; ?></p>
+
+                <ul class="caracteristiques">
+                    <li><strong>Taille :</strong> <?php echo $article['taille']; ?> cm</li>
+                    <li><strong>Poids :</strong> <?php echo $article['poids']; ?> kg</li>
+                    <li><strong>Note :</strong> <?php echo $article['note']; ?>/5</li>
+                </ul>
+
                 <em>Prix : <?php echo $article['prix']; ?> €</em><br>
 
                 <form action="article.php?id=<?php echo $idArticle; ?>" method="post">
