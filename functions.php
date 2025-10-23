@@ -21,25 +21,6 @@ function creerVignette($lVignette, $hVignette, $fullNomImage) {
     $extension = strtolower(pathinfo($cheminImage, PATHINFO_EXTENSION));
     $imagecreatefrom = "imagecreatefrom" . $extension;
     $source = $imagecreatefrom($cheminImage);
-    /* Une autre solution : 
-    // Switch pour charger tous les types d'image
-    $extension = strtolower(pathinfo($cheminImage, PATHINFO_EXTENSION));
-    switch ($extension) {
-        case 'jpg':
-            $source = imagecreatefromjpeg($cheminImage);
-            break;
-        case 'jpeg':
-            $source = imagecreatefromjpeg($cheminImage);
-            break;
-        case 'png':
-            $source = imagecreatefrompng($cheminImage);
-            break;
-        case 'webp':
-            $source = imagecreatefromwebp($cheminImage);
-            break;
-        default:
-            return "images/logo-iut.jpg"; // Logo iut si le format est pas dans la liste
-    } */
 
     // dimensions image
     $lSrc = imagesx($source);
@@ -63,28 +44,7 @@ function afficherArticles() {
     global $L_VIGNETTE;
     $articles = file_get_contents("articles.json");
     $articles = json_decode($articles);
-/*
-    $nbArticles = count($articles);
-    // vérifie que nbArticles est divisible par le nombre d'articles sur une ligne
-    $nbLignes = floor($nbArticles / $TAILLE_LIGNE);
-    if ($nbArticles%$TAILLE_LIGNE != 0) {
-        $nbLignes += 1;
-    }
-    
-    $indArticle = 0;
-    for ($indLigne = 0; $indLigne < $nbLignes; $indLigne++) {
-        echo "<div class='row-articles'>\n";
-        for ($j = 0; $j < $TAILLE_LIGNE && $indArticle < $nbArticles; $j++) {
-            echo "<div id='article$indArticle' class='article'>\n";
-            echo "<img src='" . creerVignette($L_VIGNETTE, $H_VIGNETTE, $articles[$indArticle]->image) . "' alt=''>" . "<br>\n";
-            echo $articles[$indArticle]->libelle . "<br>\n";
-            echo $articles[$indArticle]->description . "<br>\n";
-            echo "</div>\n";
-            $indArticle++;
-        }
-        echo "</div>\n";
-    }
-        */
+
     $col = 0;
 
     foreach ($articles as $id => $article) {
