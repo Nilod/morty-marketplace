@@ -11,7 +11,7 @@ header {
 }
 
 .header-title {
-
+    margin-right: auto;
 }
 
 .header-buttons {

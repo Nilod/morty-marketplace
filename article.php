@@ -9,14 +9,30 @@ if (!isset($_GET['id'])) {
     exit;
 }
 
+$idArticle = $_GET['id'];
+
 $articles = json_decode(file_get_contents("articles.json"), true);
 
-if (!isset($articles[$_GET['id']])) {
+if (!isset($articles[$idArticle])) {
     echo 'Article inexistant.';
     exit;
 }
 
-$article = $articles[$_GET['id']];
+if (isset($_POST['ajoutPanier'])) {
+    // Ajouter l'article au panier
+    if (!isset($_SESSION['panier'])) {
+        $_SESSION['panier'] = array();
+    }
+    if (!isset($_SESSION['panier'][$idArticle])) {
+        $_SESSION['panier'][$idArticle] = 0;
+    }
+    $_SESSION['panier'][$idArticle] += 1;
+
+    echo '<body onLoad="alert(\'Article ajouté au panier.\')">';
+    echo '<meta http-equiv="refresh" content="0;URL=article.php?id=' . $idArticle . '">';
+}
+
+$article = $articles[$idArticle];
 ?>
 
 <!DOCTYPE html>
@@ -28,9 +44,11 @@ $article = $articles[$_GET['id']];
 </head>
 <body>
     <header>
-        <a href="marketplace.php" class="btn-accueil"><h1>Morty Marketplace</h1></a>
-        <a href="panier.php" class="btn">Panier</a>
-        <a href="logout.php" class="btn">Logout</a>
+        <a href="marketplace.php" class="btn-accueil header-title"><h1>Morty Marketplace</h1></a>
+        <dict class="header-buttons">
+            <a href="panier.php" class="btn">Panier</a>
+            <a href="logout.php" class="btn">Logout</a>
+        </dict>
     </header>
     <main>
         <section id="article-detail">
@@ -39,8 +57,9 @@ $article = $articles[$_GET['id']];
                 <strong><?php echo $article['libelle']; ?></strong><br>
                 <?php echo $article['description']; ?><br>
                 <em>Prix : <?php echo $article['prix']; ?> €</em><br>
-                <form action="panier.php" method="post">
-                    <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+
+                <form action="article.php?id=<?php echo $idArticle; ?>" method="post">
+                    <input type="hidden" name="ajoutPanier" value="true">
                     <input type="submit" value="Ajouter au panier">
                 </form>
             </div>
