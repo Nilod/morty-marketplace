@@ -16,9 +16,11 @@ require("functions.php")
 </head>
 <body>
     <header>
-        <a href="marketplace.php" class="btn-accueil"><h1>Morty Marketplace</h1></a>
-        <a href="panier.php" class="btn">Panier</a>
-        <a href="logout.php" class="btn">Logout</a>
+        <a href="marketplace.php" class="btn-accueil header-title"><h1>Morty Marketplace</h1></a>
+        <dict class="header-buttons">
+            <a href="panier.php" class="btn">Panier</a>
+            <a href="logout.php" class="btn">Logout</a>
+        </dict>
     </header>
     <main>
         <section id="articles" class="articles">

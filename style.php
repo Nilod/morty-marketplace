@@ -7,6 +7,25 @@
 header {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.header-title {
+
+}
+
+.header-buttons {
+  margin-left: auto;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 a.btn-accueil,
@@ -19,15 +38,6 @@ a.lien-article,
 a.lien-article:visited {
     color: black;
     text-decoration: none;
-}
-
-.btn {
-  display: inline-block;
-  background-color: grey;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
 }
 
 .btn:hover {
