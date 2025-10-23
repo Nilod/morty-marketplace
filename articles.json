@@ -1,0 +1,92 @@
+{
+  "1": {
+    "libelle": "Morty Smith (classique)",
+    "description": "Le Morty original, un mélange d'anxiété chronique et de courage inattendu. Toujours prêt à suivre son Rick dans les pires situations interdimensionnelles, il reste loyal malgré les traumatismes répétés et les réalités déchirées. Un choix sûr pour les Ricks cherchant un compagnon polyvalent, émotif et un peu naïf. Attention : forte tendance à poser des questions existentielles à des moments inappropriés.",
+    "image": "morty-smith.webp",
+    "prix": 50,
+    "stock": 20,
+    "taille": 160,
+    "poids": 35,
+    "note": 4.5
+  },
+  "2": {
+    "libelle": "Cowboy Morty",
+    "description": "Yeehaw ! Ce Morty du Far West interdimensionnel est toujours prêt à dégainer... verbalement ou autrement. Il porte fièrement son chapeau de cow-boy et son accent du multivers 46B. Courageux, loyal et doté d’un sens de la justice à l’ancienne, il peut également chanter au coin du feu après une journée d’aventures. Idéal pour les Ricks aimant les univers poussiéreux et les duels de plasma.",
+    "image": "morty-cowboy.jpeg",
+    "prix": 50,
+    "stock": 15,
+    "taille": 160,
+    "poids": 35,
+    "note": 4.2
+  },
+  "3": {
+    "libelle": "Robot Morty",
+    "description": "Une fusion parfaite entre chair et métal : Robot Morty est une version améliorée du modèle classique, équipée d’un processeur d’intelligence émotionnelle (instable) et d’une résistance physique impressionnante. Il peut supporter la plupart des environnements hostiles et répondre à vos ordres avec une précision quasi mécanique. Idéal pour les Ricks fatigués des pleurs et des crises existentielles.",
+    "image": "morty-robot.png",
+    "prix": 60,
+    "stock": 10,
+    "taille": 160,
+    "poids": 40,
+    "note": 4.5
+  },
+  "4": {
+    "libelle": "Hammerhead Morty",
+    "description": "Un Morty mutant issu d’un croisement hasardeux entre génétique marine et ingénierie dimensionnelle. Sa tête en forme de marteau lui confère une vision panoramique et une force de percussion inégalée. Parfait pour les Ricks cherchant un Morty robuste, un peu lent à la détente mais extrêmement utile dans les combats rapprochés. Fournit également d’excellentes frappes de marteau — au sens littéral.",
+    "image": "morty-hammerhead.webp",
+    "prix": 55,
+    "stock": 12,
+    "taille": 160,
+    "poids": 38,
+    "note": 4.3
+  },
+  "5": {
+    "libelle": "Guard Morty",
+    "description": "Ce Morty a juré fidélité à la Citadelle et est prêt à défendre son Rick avec bravoure et discipline. Vêtu d’une armure blindée, il possède un entraînement militaire rigoureux et un sens aigu du devoir. Idéal pour les Ricks opérant dans des zones à haut risque. Attention : risque modéré d’insubordination si exposé à un discours révolutionnaire d’Evil Morty.",
+    "image": "morty-guard.png",
+    "prix": 70,
+    "stock": 8,
+    "taille": 160,
+    "poids": 45,
+    "note": 4.7
+  },
+  "6": {
+    "libelle": "Evil Morty",
+    "description": "Un Morty légendaire, symbole de rébellion et de suprême intelligence. Il ne suit pas les règles, il les écrit. Derrière son regard froid se cache un esprit calculateur, prêt à renverser tout ordre établi. Ce Morty n’est pas un compagnon, c’est un pari dangereux. Il peut être votre plus grand atout... ou votre pire erreur. Recommandé uniquement aux Ricks capables de supporter une trahison philosophique.",
+    "image": "morty-evil.png",
+    "prix": 80,
+    "stock": 5,
+    "taille": 160,
+    "poids": 42,
+    "note": 4.6
+  },
+  "7": {
+    "libelle": "Gotron Morty",
+    "description": "Résultat d’une fusion dimensionnelle d’une précision extrême, Gotron Morty est une entité mi-humaine, mi-machine. Il se combine avec d’autres Mortys pour former un mécha géant apte à affronter des menaces cosmiques. Sa puissance est inégalée, mais son individualité reste instable. À manipuler avec prudence — une erreur de synchronisation pourrait causer une implosion temporelle.",
+    "image": "morty-gotron.png",
+    "prix": 100,
+    "stock": 3,
+    "taille": 160,
+    "poids": 50,
+    "note": 5.0
+  },
+  "8": {
+    "libelle": "Cop Morty",
+    "description": "Membre des forces de l’ordre de la Citadelle, Cop Morty prend son travail très au sérieux. Armé de son badge, de son blaster et d’un profond sentiment d’injustice, il tente de maintenir la loi dans un univers où tout le monde triche avec les règles. Loyal, têtu et un peu désabusé, il reste malgré tout un Morty au grand cœur, cherchant sa place parmi les Ricks et les corrompus. Parfait pour les Ricks voulant un partenaire discipliné, voire légèrement dramatique.",
+    "image": "morty-cop.png",
+    "prix": 60,
+    "stock": 9,
+    "taille": 160,
+    "poids": 40,
+    "note": 4.4
+  },
+  "9": {
+    "libelle": "Detective Morty",
+    "description": "Un Morty cynique et perspicace ayant servi dans la Citadelle des Ricks en tant qu’enquêteur. Fumeur invétéré et observateur aiguisé, il traque la vérité à travers les mensonges du multivers. Parfait pour les Ricks souhaitant un assistant capable de résoudre des mystères, d’analyser des complots ou de flairer la trahison avant qu’elle n’arrive. Attention : tendance à monologuer sur la corruption et le destin.",
+    "image": "morty-detective.png",
+    "prix": 65,
+    "stock": 6,
+    "taille": 160,
+    "poids": 39,
+    "note": 4.4
+  }
+}
